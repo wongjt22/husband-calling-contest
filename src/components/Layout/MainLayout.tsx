@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { NavBar } from '@/features/navbar'
 
 type MainLayoutProps = {
   children: React.ReactNode;
@@ -12,16 +13,11 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
     minHeight: '100vh', 
   }
 
-  const navbarStyle = {
-    backgroundColor: '#333', // Example background color
-    color: 'white',          // Example text color
-    padding: '10px',         // Example padding
-  };
 
   return (
     <div style={mainLayoutStyle}>
-      <div style={navbarStyle}>
-        Navbar
+      <div>
+        <NavBar />
       </div>
       <div>
         {children}

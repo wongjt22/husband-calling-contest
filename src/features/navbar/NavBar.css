@@ -1,0 +1,47 @@
+.navbar {
+  background-color: #ab7c6a;
+  width: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.nav-brand {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: whitesmoke;
+  font-family: "Orkney", sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  font-style: normal;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  margin-left: 62px;
+}
+
+.nav-link {
+  font-family: "Orkney", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 31px;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  margin-right: 42px;
+  color: whitesmoke;
+}   
+  .nav-link:hover {
+      color: #93979f;
+  }
+
+  .small-icon {
+    width: 32px;
+    height: 32px;
+    padding-right: 10px;
+  }
