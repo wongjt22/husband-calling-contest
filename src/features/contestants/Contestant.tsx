@@ -19,7 +19,7 @@ export const Contestant: React.FC<ContestantProps> = ({ name, imageUrl }) => {
       <div className="image-card-name">{name}</div>
       <img src={imageUrl} alt={name} className="image-card-image" />
       <div className="image-card-footer">
-        <div className="vote-count">Votes: {voteCount}</div>
+        <div className="vote-count">{voteCount}</div>
         <div className="vote-button">
           <Button text="Vote" onClick={handleVoteClick} />
         </div>
