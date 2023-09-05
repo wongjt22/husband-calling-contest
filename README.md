@@ -1,9 +1,9 @@
 # ⚙️ Project Configuration
-#### React
-#### TypeScript
+## React
+## TypeScript
 - Typesafety
 - @ alias to src
-#### Prettier
+## Prettier
 
 # 🗄️ Project Structure
 
@@ -22,16 +22,19 @@ src
 +-- routes            # routes configuration
 ```
 
-## 🧱 Component libraries
+# 🧱 Component libraries
 - Bootstrap for NavBar
 - Heroicons for icons
 
+# 🧪 Testing
+- All manual lol
 
-### 📚 Additional Information
+
+# 📚 Additional Information
 - react helmet for managing document head
 - react-router-dom for routing
 - luxon for managing time and timezone conversions
 
-### Credit
+# Credit
 - Bulletproof React by Alan2207
 -  https://getcssscan.com/css-buttons-examples and LinkedIn
