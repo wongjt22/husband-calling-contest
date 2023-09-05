@@ -1,0 +1,38 @@
+/* ImageCard.css */
+.image-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px;
+  margin: 16px;
+}
+
+.image-card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-card-name {
+  color: black;
+  font-weight: bold;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.image-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.vote-count {
+  font-weight: bold;
+}
