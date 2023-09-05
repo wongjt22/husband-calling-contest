@@ -25,8 +25,8 @@ src
 ```
 
 ## 🧱 Component libraries
-- Bootstrap for NavBar, creates a more vissually appealing experience.
-- Heroicons for icons, enhances overall experience.
+- Bootstrap for NavBar, creates a more visually appealing experience.
+- Heroicons for icons, enhances visual experience.
 
 ## 🧪 Testing
 - Manual.
