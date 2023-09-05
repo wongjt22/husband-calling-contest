@@ -20,16 +20,18 @@ src
 |
 
 +-- routes            # routes configuration
+```
 
-## Component libraries
+## 🧱 Component libraries
 - Bootstrap for NavBar
 - Heroicons for icons
 
 
-### Additional Information
+### 📚 Additional Information
 - react helmet for managing document head
 - react-router-dom for routing
 - luxon for managing time and timezone conversions
 
 ### Credit
-Bulletproof React by Alan2207
+- Bulletproof React by Alan2207
+-  https://getcssscan.com/css-buttons-examples and LinkedIn
