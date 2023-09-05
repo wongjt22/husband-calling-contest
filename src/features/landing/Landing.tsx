@@ -12,7 +12,7 @@ export const Landing = () => {
             <h1 className="big-text">One Call Away.</h1>
             <div className="text-and-button">
               <p className="small-text">Sending words of warmth, care, and love to your partner.</p>
-              <Button text="Learn More" />
+              <a href="/about"><Button text="Learn More" /></a>
             </div>
           </div>
         </div>
