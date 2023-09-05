@@ -12,50 +12,65 @@ export const About = () => {
   const events = [
     {
       title: "Event Kickoff & Introduction",
-      time: '10:00 AM',
+      time: DateTime.fromObject({
+        hour: 10,
+        minute: 0
+      }),
       timezone: 'PST',
       additionalText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida turpis at dui accumsan, in tincidunt ex malesuada.',
     },
     {
       title: "Welcome Speech from Host",
-      time: '11:00 AM',
+      time: DateTime.fromObject({
+        hour: 11,
+        minute: 0
+      }),
       timezone: 'PST',
       additionalText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida turpis at dui accumsan, in tincidunt ex malesuada.',
     },
     {
       title: "Competition | First Round",
-      time: '11:30 AM',
+      time: DateTime.fromObject({
+        hour: 11,
+        minute: 30
+      }),
       timezone: 'PST',
       additionalText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida turpis at dui accumsan, in tincidunt ex malesuada.',
     },
     {
       title: "Intermission",
-      time: '2:00 PM',
+      time: DateTime.fromObject({
+        hour: 14,
+        minute: 0
+      }),
       timezone: 'PST',
       additionalText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida turpis at dui accumsan, in tincidunt ex malesuada.',
     },
     {
       title: "Competition | Second Round",
-      time: '10:00 AM',
+      time: DateTime.fromObject({
+        hour: 10,
+        minute: 0
+      }),
       timezone: 'PST',
       additionalText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida turpis at dui accumsan, in tincidunt ex malesuada.',
     },
     {
       title: "Briefing and Results",
-      time: '10:00 AM',
+      time: DateTime.fromObject({
+        hour: 10,
+        minute: 0
+      }),
       timezone: 'PST',
       additionalText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam gravida turpis at dui accumsan, in tincidunt ex malesuada.',
     },
   ];
 
-  function parseDateWithTimezone(dateStr: string, tz: string, ): Date {
-    const ianaTimezone = timezone === 'PST' ? 'Pacific' : 'Eastern';
-
-    const parsedDate = DateTime.fromFormat(dateStr + " " + tz, 'h:mm a ZZZ', { zone: ianaTimezone });
-    console.log("TEST", dateStr, ianaTimezone, parsedDate)
-    return parsedDate.toJSDate();
+  function convertTimezone(dateStr: DateTime) {
+    const targetTimezone = timezone === 'PST' ? 'America/Los_Angeles' : 'America/New_York';
+    return dateStr.setZone(targetTimezone).toFormat('h:mm a')
   }
-  
+
 
   return (
     <MainLayout>
@@ -77,9 +92,9 @@ export const About = () => {
           </div>
           
           <ul>
-          {events.map((event) => (
-        <Event title={event.title} time={parseDateWithTimezone(event.time, event.timezone)} timezone={timezone} additionalText={event.additionalText}/>
-      ))}
+            {events.map((event) => (
+              <Event title={event.title} time={convertTimezone(event.time)} timezone={timezone} additionalText={event.additionalText}/>
+            ))}
           </ul>
         </div>
       </div>

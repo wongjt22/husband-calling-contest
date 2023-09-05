@@ -5,7 +5,7 @@ import './Event.css';
 
 type EventProps = {
   title: string;
-  time: Date;
+  time: String;
   timezone: string;
   additionalText: string;
 };
@@ -28,7 +28,7 @@ export const Event: React.FC<EventProps> = ({
       <div className="event">
         <div className='title-and-time'>
           <div className="title">{title}</div>
-          <div className="time">{time.getTime()} {timezone==="America/Los_Angeles" ? "PST" : "EST"}</div>
+          <div className="time">{time} {timezone}</div>
         </div>
         <div className="dropdown-icon" onClick={toggleDropdown}>
           <PlusCircleIcon className="small-icon"/>
