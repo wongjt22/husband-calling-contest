@@ -1,0 +1,55 @@
+.about {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next row */
+  height: 100%; /* Make the container fill the viewport height */
+}
+
+.about-us, .schedule {
+  flex: 1;
+  padding: 40px;
+}
+
+.about-us {
+  text-align: center;
+  background-color: #332F2C;
+  color: whitesmoke;
+}
+
+.schedule {
+  text-align: center;
+}
+
+h2 {
+  font-size: 54px;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+p {
+  font-size: 32px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.schedule-and-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: auto;
+}
+
+.button {
+  font-size: 24px;
+  position: relative;
+  top: 15px;
+}
