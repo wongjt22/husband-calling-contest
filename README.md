@@ -1,11 +1,11 @@
 # Husband Calling Contest
 
 ## ⚙️ Project Configuration
-### React
-### TypeScript
-- Typesafety
-- @ alias to src
+### React + TypeScript
+- Benefits of strong typesafety.
+- '@' alias to simply imports and make the codebase more readable.
 ### Prettier
+- Code formatting, ensuring consistent code style.
 
 ## 🗄️ Project Structure
 
@@ -25,17 +25,17 @@ src
 ```
 
 ## 🧱 Component libraries
-- Bootstrap for NavBar
-- Heroicons for icons
+- Bootstrap for NavBar, creates a more vissually appealing experience.
+- Heroicons for icons, enhances overall experience.
 
 ## 🧪 Testing
-- All manual lol
+- Manual.
 
 
 ## 📚 Additional Information
-- react helmet for managing document head
-- react-router-dom for routing
-- luxon for managing time and timezone conversions
+- React Helmet for managing document head.
+- React Router Dom for routing.
+- Luxon for managing time and timezone conversions.
 
 ## Credit
 - Bulletproof React by Alan2207
