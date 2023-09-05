@@ -1,21 +1,15 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { NavBar } from '@/features/navbar'
+import './MainLayout.css'
 
 type MainLayoutProps = {
   children: React.ReactNode;
 };
 
 export const MainLayout = ({ children }: MainLayoutProps) => {
-  const mainLayoutStyle = {
-    display: 'grid',
-    gridTemplateRows: 'auto 1fr', /* First row for navbar, remaining rows for content */
-    minHeight: '100vh', 
-  }
-
-
   return (
-    <div style={mainLayoutStyle}>
+    <div className="main-layout">
       <div>
         <NavBar />
       </div>
@@ -25,5 +19,3 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
     </div>
   );
 };
-
-export default MainLayout;
