@@ -18,18 +18,13 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
     padding: '10px',         // Example padding
   };
 
-  const contentStyle = {
-    backgroundColor: 'lightgray', // Example background color
-    padding: '20px',              // Example padding
-  };
-
   return (
     <div style={mainLayoutStyle}>
       <div style={navbarStyle}>
         Navbar
       </div>
-      <div style={contentStyle}>
-        Content
+      <div>
+        {children}
       </div>
     </div>
   );
